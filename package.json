@@ -1,0 +1,29 @@
+{
+  "name": "postcss-scrib",
+  "version": "1.0.0",
+  "description": "PostCSS plugin to let you write shortcuts for your favourite properties and their favourite values.",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "keywords": [
+    "postcss-plugin",
+    "css",
+    "postcss",
+    "shorthand",
+    "shortcut",
+    "expansion"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sneakertack/postcss-scrib.git"
+  },
+  "author": "Melvin Tiong",
+  "license": "MIT",
+  "dependencies": {
+    "postcss": "^5.0.14"
+  },
+  "devDependencies": {
+    "ava": "^0.9.1"
+  }
+}
