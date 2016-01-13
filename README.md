@@ -1,5 +1,7 @@
 [PostCSS] plugin to let you write shortcuts for your favourite properties and their favourite values.
 
+[PostCSS]: https://github.com/postcss/postcss
+
 ```sh
 # my-scrib-shortcuts.txt
 b border # Define a property shortcut.
@@ -32,7 +34,7 @@ tr.fancy-class {
 
 ```css
 /* output.css */
-tr.fancy-class { /* <-- tr selector remains safe */
+tr.fancy-class { /* <-- 'tr' only affects properties, so the selector remains safe */
   border: solid 1px black;
   display: block;
   color: white;
@@ -69,7 +71,7 @@ See [PostCSS] docs for examples for your environment.
 
 ## Intermediate JS representation
 
-Using the `tree` option, you have the choice of writing your shortcuts directly in JS, instead of in this plugin's custom format. It is slightly more verbose, but may come in useful in cases where you wish to generate shortcuts programmatically, or modify shortcuts at a later time.
+Using the `tree` option, you have the choice of writing your shortcuts directly in JS, instead of in this plugin's custom format. It is slightly more verbose, but may come in useful in cases where you wish to generate shortcuts programmatically, or modify shortcuts at a later time. Converting the example at the top of this readme into a tree gives us:
 
 ```js
 { b: 'border',
