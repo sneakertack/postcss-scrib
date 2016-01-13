@@ -1,6 +1,6 @@
 {
   "name": "postcss-scrib",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "PostCSS plugin to let you write shortcuts for your favourite properties and their favourite values.",
   "main": "index.js",
   "scripts": {
